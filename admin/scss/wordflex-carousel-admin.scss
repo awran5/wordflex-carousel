@@ -1,0 +1,225 @@
+.wf-container {
+	display: flex;
+	margin: 2rem 0;
+	.wf-main {
+		flex: 4 0 0;
+		margin-right: .5rem;
+		padding: 1rem 2rem 2rem;
+		border: 1px solid #e5e5e5;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+		background: #fff;
+	}
+	.wf-side {
+		flex: 1 0 0;
+		margin-left: .5rem;
+		padding: 2rem 1rem;
+		border: 1px solid #e5e5e5;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+		background: #fff;
+	}
+}
+
+.wf-main {
+	padding: 1rem;
+	.lead {
+		font-size: 1.25rem;
+		font-weight: 300;
+	}
+	.my-2 {
+		margin: 2rem 0 !important;
+	}
+	.inside-heading {
+		padding: 0 !important;
+		font-size: 1.25rem !important;
+		font-weight: 500;
+	}
+	.copy-to-clipboard {
+		position: relative;
+		font-size: 11px !important;
+	}
+	.shortcode-input {
+		background: rgba(194, 110, 110, 0.2) !important;
+		padding: .5rem;
+		border-radius: .25rem;
+		text-align: center;
+	}
+	.copy-to-clipboard {
+		.copy {
+			cursor: pointer;
+			text-decoration: none;
+			padding-left: .25rem;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.copied {
+			display: none;
+			padding-left: .25rem;
+		}
+	}
+}
+
+.wf-side .sidebar-element {
+	padding: .5rem;
+	.dashicons {
+		color: #82878c;
+		font-size: 1.25rem;
+	}
+	.no-underline {
+		text-decoration: none;
+	}
+}
+
+/* CMB2 Edit */
+#cmb2-metabox-wordflex_carousel_options_page {
+	margin: 0 .5rem;
+	padding: 1rem 2rem 2rem;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	background: #fff;
+}
+
+.cmb-row {
+	display: flex;
+	padding: 2rem 1rem;
+	margin: 1rem 0;
+	.cmb-th {
+		flex: 1 0 0;
+		padding: 0 1rem;
+		margin: 0 0.5rem 0.75rem 0;
+	}
+	.cmb-td {
+		flex: 4 0 0;
+		padding: 0 1rem;
+		.cmb2-metabox-description {
+			margin-top: 0;
+			padding-top: .5rem !important;
+			font-size: .9rem !important;
+			display: block;
+			font-style: italic;
+			color: #aaa;
+			clear: both;
+		}
+		.cmb2-upload-file, .cmb2_select {
+			margin: 0 0.5rem 0.5rem 0;
+		}
+		.cmb2-text-small {
+			width: 20%;
+		}
+		.cmb2_select {
+			width: 25em;
+		}
+		.cmb2_textarea {
+			max-width: 100%;
+		}
+	}
+	&.cmb-type-title {
+		text-align: center;
+		padding: 0;
+		.cmb2-metabox-title {
+			font-size: 15px !important;
+			margin-bottom: 0 !important;
+		}
+	}
+	&.switch-field .cmb2-radio-list {
+		margin: 0;
+		width: 100px;
+		li {
+			padding-right: 0;
+			margin: 0;
+			line-height: inherit;
+			&:first-of-type label {
+				border-radius: .25rem 0 0 .25rem;
+			}
+			&:last-of-type label {
+				border-radius: 0 .25rem .25rem 0;
+			}
+		}
+		input {
+			display: none;
+		}
+		label {
+			float: left;
+			background-color: #e4e4e4;
+			padding: .25rem .75rem;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			-webkit-transition: all 0.1s ease-in-out;
+			transition: all 0.1s ease-in-out;
+		}
+		input:checked + label {
+			color: #fff;
+			background-color: #0073aa;
+		}
+	}
+	&.cmb-type-group {
+		padding: 0;
+		.cmb-repeatable-grouping {
+			display: block;
+			position: relative;
+			padding: 0;
+			.cmb-group-title {
+				text-align: center;
+				background: #eee;
+				cursor: pointer;
+			}
+			> .cmb-remove-group-row {
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				cursor: pointer;
+				background: transparent;
+				border: none;
+				color: red;
+			}
+			.cmbhandle {
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				color: #72777c;
+				cursor: pointer;
+				text-align: center;
+				background: transparent;
+				&::before {
+					content: '\f142';
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					font-size: 20px;
+					line-height: 30px;
+					font-family: dashicons;
+					text-decoration: inherit;
+					font-weight: 400;
+					font-style: normal;
+					text-align: center;
+					-webkit-transition: color .1s ease-in 0;
+					transition: color .1s ease-in 0;
+				}
+			}
+			&.closed .cmbhandle::before {
+				content: '\f140';
+			}
+			.inside {
+				margin-top: 3rem !important;
+			}
+		}
+	}
+	&.cmb-remove-field-row {
+		display: block;
+		.cmb-shift-rows span {
+			line-height: 30px !important;
+		}
+	}
+	&:not(:last-of-type) {
+		border-bottom: 1px solid #e9e9e9;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.cmb-row {
+		flex-flow: column;
+	}
+	.cmb2-text-small, .cmb2-text-medium, .cmb2_select {
+		width: 100%;
+		float: none;
+	}
+}
