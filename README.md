@@ -16,3 +16,6 @@ This plugins requires [Bootstrap 4](https://getbootstrap.com/) and [Animate.css]
 * Easy to use with simple user interface.
 * Browsers support: Chrome v68, Firefox v60, Safari v11, Edge v15, Opera v50, Chrome Android and Safari on iOs.
 
+***
+
+![wordflex-carousel-preview](https://raw.githubusercontent.com/awran5/wordflex-carousel/master/preview.png)
